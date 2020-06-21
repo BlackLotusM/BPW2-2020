@@ -941,7 +941,7 @@ GameObject:
   - component: {fileID: 1273386377}
   - component: {fileID: 1273386376}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: EnemieFailSpawnCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

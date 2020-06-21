@@ -47,7 +47,10 @@ public class Player : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		CharacterMovement();
+		if (!GameManager.gamepauze)
+		{
+			CharacterMovement();
+		}
 	}
 	private void OnTriggerExit(Collider other)
 	{

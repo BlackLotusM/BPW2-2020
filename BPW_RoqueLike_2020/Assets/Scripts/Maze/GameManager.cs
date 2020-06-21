@@ -25,8 +25,6 @@ public class GameManager : MonoBehaviour {
 	public GameObject biep;
 	public IEnumerator BeginGame () {
 		Debug.Log(enemiesCounter);
-		//Camera.main.clearFlags = CameraClearFlags.Skybox;
-		//Camera.main.rect = new Rect(0f, 0f, 1f, 1f);
 		mazeInstance = Instantiate(mazePrefab) as Maze;
 		mazeInstance.Generate();
 		yield return StartCoroutine(mazeInstance.Generate());
@@ -41,10 +39,6 @@ public class GameManager : MonoBehaviour {
 		{
 			sp.SpawnPortal();
 		}
-		
-
 		Debug.Log(mazeInstance.roomSettings);
-		//Camera.main.clearFlags = CameraClearFlags.Depth;
-		//Camera.main.rect = new Rect(0f, 0f, 0.5f, 0.5f);
 	}
 }
